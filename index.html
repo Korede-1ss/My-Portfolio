@@ -4,22 +4,459 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/box-models.css" />
   </head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://kit.fontawesome.com/ae30bebaa6.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  />
+  <link rel="stylesheet" href="./Portfolio.css" />
   <body>
-    <div class="abc">ABC</div>
-    <div class="def">DEF</div>
-    <br />
-    <div class="ghi">GHI</div>
-    <div class="jkl">JKL</div>
-    <div class="mno">MNO</div>
-    <div class="pqr">PQR</div>
-    <div class="stu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reprehenderit, odit explicabo cumque dicta labore quos, perspiciatis accusantium vitae repellat quaerat fugiat facere aliquam! Reiciendis sequi dignissimos iusto quisquam doloribus.</div>
-    <div class="vwx">VWX</div>
-  
-    <div>
-      <h1 class="sqi child">Welcome to SQI</h1>
-      <p class="child lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat laboriosam culpa incidunt quos dolore unde odio iste nostrum quisquam doloribus saepe nulla, quam vel illo dignissimos eaque tempore adipisci harum.</p>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark px-3 fixed-top p-3">
+      <div class="container-fluid d-flex align-items-center">
+        <div class="flex-fill">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./Asset/Fawaaz-logo.jpg"
+              alt="Avatar Logo"
+              style="width: 40px"
+              class="rounded-pill"
+            />
+          </a>
+        </div>
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="flex-fill d-flex justify-content-center">
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav gap-3">
+              <li class="nav-items">
+                <a class="text-white nav-link" href="#about">ABOUT</a>
+              </li>
+              <li class="nav-items">
+                <a class="text-white nav-link" href="#projects">PROJECTS</a>
+              </li>
+              <li class="nav-items">
+                <a class="text-white nav-link" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex-fill">
+          <form class="d-none d-md-flex justify-content-end">
+            <input
+              class="form-control me-2"
+              type="text"
+              placeholder="Search"
+              style="width: 300px"
+            />
+            <button class="btn btn-primary" type="button">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div
+        class="mt-5 pt-5 px-5 text-white container-fluid"
+        style="background-color: #3b82f6"
+      >
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h4 class="greeting tv">Hi, I'm</h4>
+            <h1 class="display-4 fw-bold tv">Oloyede Fawaaz</h1>
+
+            <h2 class="role tv">Front-End Developer | Cybersecurity Student</h2>
+            <p class="pitch tv cvv">
+              I'm learning to build clean, responsive interfaces and to think
+              like an attacker to defend them better.
+            </p>
+            <a href="#projects" class="tv btn btn-primary btn-lg"
+              >View My Projects</a
+            >
+
+            <div class="social-icons mt-3">
+              <a
+                href="https://github.com/Korede-1ss"
+                target="_blank"
+                class="text-white me-3"
+              >
+                <i class="bi bi-github fs-4"></i>
+              </a>
+              <a
+                href="https://linkedin.com/in/fawaazcyber"
+                target="_blank"
+                class="text-white me-3"
+              >
+                <i class="bi bi-linkedin fs-4"></i>
+              </a>
+              <a href="mailto:fawaazmail@gmail.com" class="text-white">
+                <i class="bi bi-envelope-fill fs-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 text-end px-5">
+            <img class="img-fluid ani" src="./Asset/Fawaaz-pic.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MY About -->
+    <section id="about" class="bg-dark text-white">
+      <!-- <div class="text-end py-5" style="position: sticky;" > <a href="#home" class="btn btn-primary rounded-circle but py-3 text-center  " ><i class="fa-solid fa-up-long fa-beat-fade fa-2xl"></i></a></div> -->
+      <div class="pt-5 px-5 text-white container-fluid row">
+        <br />
+        <br />
+
+        <div class="pt-5 col-md-6">
+          <h1 class="display-4 abb">About Me</h1>
+          <div>
+            <p class="abs">
+              I've been interested in writing code for as long as I can
+              remember. I got my first real introduction to it when an uncle of
+              mine taught me HTML and CSS — and I was hooked from the start.
+              There's something I still love about watching a design go from a
+              blank page to something real and working in the browser; that
+              moment is what's kept me building.
+            </p>
+            <br />
+            <p class="abs">
+              To sharpen those skills, I enrolled at SQI, where I strengthened
+              my HTML and CSS and learned Bootstrap. SQI is also where I'm now
+              getting introduced to cybersecurity — something I've actually been
+              curious about for a while. If I'm honest, I used to want to be a
+              hacker. These days, "ethical hacker" sounds a lot better — and
+              that's the direction I'm leaning into.
+            </p>
+          </div>
+        </div>
+        <div class="pt-5 col-md-6">
+          <h1 class="display-4 abb">My Journey</h1>
+          <center>
+            <br />
+
+            <div
+              class="sed rounded-circle text-center"
+              style="background-color: #3b82f6"
+            >
+              <h3 style="font-size: medium">Self-taught beginnings</h3>
+              <p>
+                Started learning HTML and CSS on my own, driven by curiosity.
+              </p>
+            </div>
+            <br />
+
+            <div>
+              <i class="fa-solid fa-arrow-down fa-beat-fade fa-2xl"></i>
+            </div>
+            <br />
+            <div
+              class="sed rounded-circle text-center"
+              style="background-color: #3b82f6"
+            >
+              <h3 style="font-size: medium">SQI COLLEGE ICT</h3>
+              <p>Strengthened my HTML and CSS skills, and learned Bootstrap.</p>
+            </div>
+            <br />
+
+            <div>
+              <i class="fa-solid fa-arrow-down fa-beat-fade fa-2xl"></i>
+            </div>
+            <br />
+            <div
+              class="sed rounded-circle text-center"
+              style="background-color: #3b82f6"
+            >
+              <h3 style="font-size: medium">Cybersecurity</h3>
+              <p>
+                Started learning how systems and websites can be broken into —
+                and defended.
+              </p>
+            </div>
+            <br>
+            <br>
+            <br>
+          </center>
+        </div>
+      </div>
+    </section>
+
+ 
+    <!-- My Project -->
+    <section id="projects" class="bg-dark text-white px-5 "  >
+
+        <h1 class="display-4  abb">My Project</h1>
+        <br>
+        <br>
+
+<div class="bg-dark">
+      <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active">  </button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div  class="carousel-item active  "  >
+      <a   href="https://korede-1ss.github.io/Printivo-clone/">
+      <img style="padding-right: 20px; padding-left: 20px; padding-bottom: 20px ; padding-top: 20px;" src="./Asset/printivo.png"   alt="Los Angeles" class="d-block w-100"> </a>
+       <div class="carousel-caption text-primary ts-5 display-6 ">
+    <h3>Freecodechamp</h3>
+    <p>My Clone of Freecodechamp website</p>
+  </div>
     </div>
+     <div class="carousel-item">
+            <a   href="https://korede-1ss.github.io/SQI-clone/">
+      <img style="padding-right: 20px; padding-left: 20px; padding-bottom: 20px ; padding-top: 20px;" src="./Asset/SQI.png" alt="New York" class="d-block w-100"></a>
+    </div>
+    <div class="carousel-item">
+      <img style="padding-right: 20px; padding-left: 20px; padding-bottom: 20px ; padding-top: 20px;" src="./Asset/Freecodechamp.png" alt="Chicago" class="d-block w-100">
+    </div>
+   
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev " type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</div>
+
+ <section class="container">
+      <div
+        class="container d-flex align-items-center justify-content-between py-5"      >
+        <div>
+          <h3
+            style="
+              font-family:
+                SF Pro,
+                sans-serif;
+            "
+          >
+            Popular Projects
+          </h3>
+        </div>
+        <div>
+          <p>
+            <a style="text-decoration: none; color: #d98a8a" href="#"
+              >View all project</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <div class="img-wrap" style="background-size: cover;">
+              <img
+                class="im"
+                src="./Asset/printivo.png"
+                alt=""
+              />
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5><b> Printivo Clone</b></h5>
+         
+              <br>
+              <a href="https://korede-1ss.github.io/Printivo-clone/" class="btn button ">
+                Click to preview <i class="bi bi-chevron-right vb"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <div class="img-wrap">
+              <img
+                class="im"
+                src="./Asset/SQI.png"
+                alt=""
+              />
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5><b>SQI-Clone</b></h5>
+         
+              
+              <br>
+              <a href="#" class="btn button ">
+                Click to preview <i class="bi bi-chevron-right vb"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <div class="img-wrap">
+              <img
+                class="im"
+                src="./Asset/Freecodechamp.png"
+                alt=""
+              />
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5><b>Freecodechamp Clone</b></h5>
+         
+              <br>
+              <a href="https://korede-1ss.github.io/SQI-clone/" class="btn button ">
+                Click to preview <i class="bi bi-chevron-right vb"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <div class="img-wrap">
+              <img
+                class="im"
+                src="./Asset/Exam.png"
+                alt=""
+              />
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5><b>Exam Page</b></h5>
+              <br>
+              <br>
+
+              <a href="#" class="btn button ">
+                Click to preview <i class="bi bi-chevron-right vb"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+    </section>
+    
+
+    </section>
+      <!-- <a href="#home" class="btn btn-primary rounded-circle but py-3 text-center  " ><i class="fa-solid fa-up-long fa-beat-fade fa-2xl"></i></a> -->
+
+    <!-- Contact -->
+  <section id="contact" class="bg-dark text-white py-5">
+  <div class="px-5">
+         <h1 class="display-4  abb">Contact Me</h1>
+         <br>
+         <br>
+    <div class="row g-5 align-items-center">
+
+      
+      <div class="col-12 col-md-6">
+        <h4>I'm open to internships, collaborations, and conversations about web development and cybersecurity. Reach out anytime.</h4>
+        <br>
+      
+        <div class="social-icons mt-3">
+              <a
+                href="https://github.com/Korede-1ss"
+                target="_blank"
+                class="text-white me-3"
+              >
+                <i class="bi bi-github fs-4"></i>
+              </a>
+              <a
+                href="https://linkedin.com/in/fawaazcyber"
+                target="_blank"
+                class="text-white me-3"
+              >
+                <i class="bi bi-linkedin fs-4"></i>
+              </a>
+              <a href="mailto:fawaazmail@gmail.com" class="text-white">
+                <i class="bi bi-envelope-fill fs-4"></i>
+              </a>
+            </div>
+
+      </div>
+
+
+      <div class="col-12 col-md-6 dark-theme">
+          <div class=" border border-secondary rounded-4 p-4 bbg">
+
+     <h3 class="mb-3">Send Me a Message</h3>
+      <div class=" d-flex gap-1">
+          <div><i class="fa-solid fa-circle fa-beat-fade fa-sm text-success"></i></div> 
+            <span>Open to opportunities</span>
+              </div>
+              <br>
+
+
+       <form action="https://api.web3forms.com/submit" method="POST" data-bs-theme="dark">
+
+       
+       
+
+  <input type="hidden" name="access_key" value="a8b9e50e-9491-4cad-82ed-7d67e91d3b21">
+  <input type="hidden" name="subject" value="New message from my portfolio">
+
+  <div class="mb-3">
+    <label for="name" class="form-label"  >Name:</label>
+    <input type="text" class="form-control"  id="name" name="name" placeholder="Enter name" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="message" class="form-label">Message:</label>
+    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+  </div>
+<input type="checkbox" name="botcheck" style="display: none;">
+  <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+
+</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+     </div>
+
   </body>
 </html>

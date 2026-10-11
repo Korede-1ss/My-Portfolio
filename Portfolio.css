@@ -1,0 +1,101 @@
+* {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.cvv {
+  font-size: large;
+}
+.ani {
+  animation: fade 1.5s ease-in-out 0.3s backwards;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.tv {
+  animation: fadeup 1s ease-in-out;
+}
+@keyframes fadeup {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 767.98px) {
+  nav .flex-fill {
+    flex: 0 1 auto;
+  }
+}
+.abb {
+  font-weight: bolder;
+}
+.abs {
+  font-size: larger;
+}
+.but {
+  position: sticky;
+  bottom: 20px;
+  right: 20px;
+  size: 20px;
+  border: 50%;
+  height: 4rem;
+  width: 4rem;
+}
+.sed {
+  height: 4.5rem;
+  width: 25rem;
+  padding-bottom: 5rem;
+  padding-top: 0.1rem;
+  font-size: medium;
+  overflow: hidden;
+}
+.img-wrap {
+  aspect-ratio: 16 / 9;
+  overflow: hidden !important;
+}
+
+.card img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.img-wrap:hover .im {
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 00s;
+  transform: scale(1.1);
+}
+.btn.button {
+  border: none;
+  background-color: #d98a8a;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
